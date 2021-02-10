@@ -1,0 +1,36 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Desafio Jogo da Memória por Urak Ferraz",
+  "main": "./src/assets/js/index.js",
+  "scripts": {
+    "build:dev": "webpack",
+    "watch": "webpack -w",
+    "serve": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel ./assets/js/index.js -o ./dist/assets/js/bundle.js --presets=@babel/env",
+    "start:dev": "npm-run-all build:dev --parallel serve watch"
+  },
+  "keywords": [],
+  "author": "Urak Ferraz",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-transform-arrow-functions": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "autoprefixer": "^10.2.4",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.8.3",
+    "css-loader": "^5.0.1",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^5.0.0",
+    "regenerator-runtime": "^0.13.7",
+    "style-loader": "^2.0.0",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
