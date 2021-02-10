@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Urak Ferraz">
+    <title>Jogo da memória</title>
+</head>
+<body>
+    <div id="main">
+        <div class="wrapper flex">
+            <div class="header">
+                <img src="./assets/img/logo-vivamemory.svg" alt="logo">
+            </div>
+            <div class="gameArea grid">
+
+
+                <div class="areaJogo telaInicial flex">
+                    <button class="facilBtn flex">&#x1F476 <span>Fácil</span></button>
+                    <button class="normalBtn flex">&#x1F466 <span>Normal</span></button>
+                    <button class="dificilBtn flex">&#x1F92F <span>Difícil</span></button>
+                </div>
+
+
+                <div class="areaJogo areaJogoFacil flex">
+                    <div class="headerTelaJogo flex">
+                        <span class="placar">0 movimentos</span>
+                        <button class="reiniciarBtn">&#x1F504</button>
+                    </div>
+                    <div class="cardsWrapper cardsWrapper-facil grid">
+                    </div>
+                    <div class="footerTelaJogo flex">
+                        <span>Nível:</span><span>Fácil - 4</span>
+                    </div>
+                </div>
+
+
+                <div class="areaJogo areaJogoNormal flex">
+                    <div class="headerTelaJogo flex">
+                        <span class="placar">0 movimentos</span>
+                        <button class="reiniciarBtn">&#x1F504</button>
+                    </div>
+                    <div class="cardsWrapper cardsWrapper-normal grid">
+                    </div>
+                    <div class="footerTelaJogo flex">
+                        <span>Nível:</span><span>Normal - 8</span>
+                    </div>
+                </div>
+
+
+                <div class="areaJogo areaJogoDificil flex">
+                    <div class="headerTelaJogo flex">
+                        <span class="placar">0 movimentos</span>
+                        <button class="reiniciarBtn">&#x1F504</button>
+                    </div>
+                    <div class="cardsWrapper cardsWrapper-dificil grid">
+                    </div>
+                    <div class="footerTelaJogo flex">
+                        <span>Nível:</span><span>Difícil - 16</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="telaFinal flex">
+        <div class="contentTelaFinal flex">
+            <span>&#x2705</span>
+            <span>Parabéns! Você conseguiu!</span>
+            <span class="placarFinal">Com 14 movimentos</span>
+            <button class="voltarBtn flex">Jogar novamente</button>
+            <img src="./assets/img/logo-vivamemory.svg" alt="logo">
+        </div>
+    </div>
+    <script type="application/javascript" src="./assets/js/bundle.js"></script>
+</body>
+</html>
